@@ -20,7 +20,7 @@ const SingleProduct: FC<singleProductData> = ({
       </div>
       {/* product name */}
       <div className="w-full h-[5%]  flex items-center max-md:pt-1">
-        f<p className="font-medium max-md:text-xs capitalize">{title}</p>
+        <p className="font-medium max-md:text-xs capitalize">{title}</p>
       </div>
 
       {/* product price */}
