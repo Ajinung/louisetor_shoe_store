@@ -59,6 +59,11 @@ const Header = () => {
               </p>
 
               <hr />
+              <p>
+                <a href="#">store</a>
+              </p>
+
+              <hr />
 
               <div className="absolute bottom-5 left-5">
                 <p className=" py-4">
