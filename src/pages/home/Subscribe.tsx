@@ -13,25 +13,30 @@ const Subscribe = () => {
         <input
           type="email"
           required
-          className={`flex-1 px-3 outline-none border-[1px] text-gray-400 transition-all ${
-            isFocused ? "border-purple-500" : ""
+          className={`flex-1 px-3 outline-none border-[1px] text-gray-400 ${
+            isFocused
+              ? "border-purple-500 ease-in duration-300"
+              : "ease-in duration-300"
           }`}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
         />
-        {isFocused ? (
-          <p
-            className={`absolute px-3 bottom-[-25px] transition-transform duration-300 transform translate-y-0 z-10 text-purple-500 text-sm`}
-          >
-            email address
-          </p>
-        ) : (
-          <p
-            className={`absolute px-3 bottom-[-25px] transition-transform duration-300 transform -translate-y-9 z-10 text-slate-400 text-sm`}
-          >
-            email address
-          </p>
-        )}
+        <div
+          className={`absolute px-3 bottom-3 left-3 ease-in-out ${
+            isFocused ? "-translate-y-6 opacity-0" : "translate-y-0 opacity-100"
+          } text-purple-500 text-sm pointer-events-none`}
+        >
+          email address
+        </div>
+        <p
+          className={`absolute px-3 bottom-[-25px] transition-all duration-500 transform ${
+            isFocused
+              ? "translate-y-0 opacity-100"
+              : "-translate-y-full opacity-0"
+          } z-10 text-purple-500 text-sm`}
+        >
+          email address
+        </p>
       </div>
     </div>
   );
