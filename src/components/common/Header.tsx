@@ -60,7 +60,7 @@ const Header = () => {
 
               <hr />
               <p>
-                <a href="#">store</a>
+                <a href="#">shop</a>
               </p>
 
               <hr />
@@ -98,6 +98,9 @@ const Header = () => {
             </p>
             <p>
               <a href="#">shoe care</a>
+            </p>
+            <p>
+              <a href="#">shop</a>
             </p>
           </nav>
         </div>
