@@ -15,7 +15,7 @@ const SingleProduct: FC<singleProductData> = ({
           src={thumbnail}
           alt=""
           loading="lazy"
-          className="w-[80%] h-[80%] object-contain"
+          className="w-[80%] h-[80%] object-contain hover:scale-110 transition duration-300 ease-in-out"
         />
       </div>
       {/* product name */}
