@@ -24,7 +24,7 @@ const Subscribe = () => {
         <div
           className={`absolute px-3 bottom-3 left-3 ease-in-out ${
             isFocused ? "-translate-y-6 opacity-0" : "translate-y-0 opacity-100"
-          } text-purple-500 text-sm pointer-events-none`}
+          } text-slate-400 text-sm pointer-events-none`}
         >
           email address
         </div>
