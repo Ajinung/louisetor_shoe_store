@@ -4,9 +4,9 @@ import { MdDeliveryDining, MdOutlineSupportAgent } from "react-icons/md";
 
 const Statistics = () => {
   return (
-    <div className="w-[90%] m-auto h-[30vh] grid place-items-center my-8 max-md:h-fit max-md:w-full">
-      <div className="w-[95%] h-[95%]  grid grid-cols-4 gap-5 max-lg:grid-cols-2">
-        <div className=" flex items-center gap-5 p-5 max-md:flex-col">
+    <div className="w-[90%] m-auto h-[30vh] grid place-items-center my-8 max-lg:h-fit max-md:w-full ">
+      <div className="w-[95%] h-[95%]  grid grid-cols-4 gap-5 max-lg:grid-cols-2 max-md:w-full max-md:h-full">
+        <div className=" flex items-center gap-5 p-5 max-md:flex-col max-md:p-1">
           {/* icon */}
           <div className="w-[25%] text-7xl flex items-center justify-center">
             <FiHeart />
@@ -22,7 +22,7 @@ const Statistics = () => {
             </p>
           </div>
         </div>
-        <div className=" flex items-center gap-5 p-5 max-md:flex-col">
+        <div className=" flex items-center gap-5 p-5 max-md:flex-col max-md:p-1">
           {/* icon */}
           <div className="w-[25%] text-7xl flex items-center justify-center">
             <MdDeliveryDining />
@@ -38,7 +38,7 @@ const Statistics = () => {
             </p>
           </div>
         </div>
-        <div className=" flex items-center gap-5 p-5 max-md:flex-col">
+        <div className=" flex items-center gap-5 p-5 max-md:flex-col max-md:p-1">
           {/* icon */}
           <div className="w-[25%] text-7xl flex items-center justify-center">
             <MdOutlineSupportAgent />
@@ -54,7 +54,7 @@ const Statistics = () => {
             </p>
           </div>
         </div>
-        <div className=" flex items-center gap-5 p-5 max-md:flex-col">
+        <div className=" flex items-center gap-5 p-5 max-md:flex-col max-md:p-1">
           {/* icon */}
           <div className="w-[25%] text-7xl flex items-center justify-center">
             <BsHandThumbsUp />
