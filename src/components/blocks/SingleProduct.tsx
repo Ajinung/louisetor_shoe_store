@@ -8,7 +8,7 @@ const SingleProduct: FC<singleProductData> = ({
   thumbnail,
 }) => {
   return (
-    <div className="flex flex-col gap-3 max-xl:mb-4">
+    <div className="flex flex-col gap-4 max-xl:mb-4">
       {/* product image */}
       <div className="w-full h-[90%] bg-[#F1F1F1] px-5 py-2 flex items-end justify-center hover:shadow-md transition-all ease-in duration-150">
         <img
@@ -19,15 +19,15 @@ const SingleProduct: FC<singleProductData> = ({
         />
       </div>
       {/* product name */}
-      <div className="w-full h-[5%]  flex items-center ">
-        <p className="font-medium max-md:text-sm capitalize">{title}</p>
+      <div className="w-full h-[5%]  flex items-center max-md:pt-1">
+        <p className="font-medium max-md:text-xs capitalize">{title}</p>
       </div>
 
       {/* product price */}
       <div className="w-full h-[5%] flex items-center gap-2 max-md:text-sm">
         {/* former price  */}
-        <p className="line-through">{promo}</p>
-        <p className="">{price}</p>
+        <p className="line-through max-md:text-xs">{promo}</p>
+        <p className="max-md:text-xs">{price}</p>
       </div>
     </div>
   );
